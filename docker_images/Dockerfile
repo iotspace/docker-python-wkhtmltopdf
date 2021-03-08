@@ -7,3 +7,7 @@ RUN apt-get update \
     x11-common xfonts-encodings \
     && wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb \
     && dpkg -i wkhtmltox_0.12.6-1.buster_amd64.deb
+
+# Installing Asian Fonts: Chinese Japanese Korean
+# RUN apt-get install fonts-arphic-ukai fonts-arphic-uming fonts-ipafont-mincho fonts-ipafont-gothic fonts-unfonts-core
+RUN apt-get install fonts-noto-cjk
